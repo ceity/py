@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+<head>
+    <title>Python资料下载</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Python资料下载</h1>
+    <button onclick="downloadFile()">下载文件</button>
+
+    <script>
+        function downloadFile() {
+        var link = document.createElement('a');
+        link.href = 'a.txt';
+        link.download = 'a.txt';
+        link.click();
+        }
+    </script>
+    
+</body>
+</html>
